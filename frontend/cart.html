@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-left">
+    <span class="logo-icon">🛒</span>
+    <span class="logo-text">My E-Commerce Store</span>
+  </div>
+
+  <div class="nav-right">
+    <a href="index.html">Home</a>
+    <a href="orders.html">Orders</a>
+    <a href="cart.html" class="cart-btn">Cart</a>
+    <button id="logoutBtn" class="logout-btn">Logout</button>
+  </div>
+</header>
+
+<!-- PAGE CONTENT -->
+<div class="cart-container">
+  <a href="index.html" class="back-link">⬅ Continue Shopping</a>
+
+  <h2 class="center">My Cart</h2>
+
+  <div id="cart-items"></div>
+
+  <h3 class="center">
+    Total: <span id="total">₹0</span>
+  </h3>
+
+  <div class="center">
+    <button id="checkoutBtn" class="checkout-btn">
+      Place Order
+    </button>
+  </div>
+</div>
+
+<script src="cart.js"></script>
+</body>
+</html>

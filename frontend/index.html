@@ -1,22 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>eCommerce Frontend</title>
+  <meta charset="UTF-8">
+  <title>E-Commerce | Products</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header class="navbar">
+  <div class="nav-left">
+    <span class="logo-icon">🛒</span>
+    <span class="logo-text">My E-Commerce Store</span>
+  </div>
 
-  <h1>My Products</h1>
+  <div class="nav-right">
+    <input 
+      type="text" 
+      id="searchInput" 
+      placeholder="Search products..." 
+      class="search-box"
+     />
 
-  <form id="productForm">
-    <input type="text" id="name" placeholder="Product Name" required />
-    <input type="number" id="price" placeholder="Price" required />
-    <button type="submit">Add Product</button>
-  </form>
+    <a href="index.html">Home</a>
+    <a href="orders.html">Orders</a>
+    <a href="cart.html" class="cart-btn">Cart</a>
+    <button id="logoutBtn" class="logout-btn">Logout</button>
+  </div>
+</header>
+<div class="banner">
+  <h1>Big Sale 🎉</h1>
+  <p>Up to 50% Off on Electronics</p>
+  <button>Shop Now</button>
+</div>
 
-  <h2>Product List</h2>
-  <ul id="productList"></ul>
+<div class="categories">
 
-  <script src="script.js"></script>
+  <div class="cat">👟 Shoes</div>
+  <div class="cat">💻 Laptop</div>
+  <div class="cat">📱 Mobile</div>
+  <div class="cat">🎧 Accessories</div>
+
+</div>
+
+
+<section class="products" id="products"></section>
+
+
+<script src="index.js"></script>
 </body>
 </html>

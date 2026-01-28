@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
 const productSchema = new mongoose.Schema({
+  
   name: {
     type: String,
     required: true
@@ -8,7 +9,16 @@ const productSchema = new mongoose.Schema({
   price: {
     type: Number,
     required: true
-  }
+  },
+  images: {
+    type: String,
+    required: true
+}
 });
 
+
+
 module.exports = mongoose.model("Product", productSchema);
+
+
+  
